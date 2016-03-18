@@ -1,6 +1,7 @@
 ### Aim: Build a search engine to 
 1. Support boolean query with "AND" and "OR".
 2. Support tf-idf ranking query.
+
 ### Solution:
 1. Read all the data to a list of tuples, each tuple contains filename and content.
 2. Operate functions on this list.
