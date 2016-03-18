@@ -64,10 +64,9 @@ object query {
       val wordsAll = content.toLowerCase().split(" ").map(s => s.trim)  
       
 //      For example, the queryString: "science and religion or happy and flower or morality"
-//      1. Split by " or ": Array("science and religion", "happy and flower", "morality")
-//      2. Split by " and ": Array(Array("science", "religion"), Array("happy", "flower"), Array("morality")) 
-//      3. Determine true if the content words include query word, otherwise false. 
-//          Assume that for the content of one document, it returns:
+//      1. Split by " OR ": Array("science and religion", "happy and flower", "morality")
+//      2. Split by " AND ": Array(Array("science", "religion"), Array("happy", "flower"), Array("morality")) 
+//      3. Determine true if the content words include query word, otherwise false. Assume that for the content of one document, it returns:
 //            Array(Array(true, false), Array(false, false), Array(true))
 //      4. The boolean operation of the inner array is "and", 
 //          so if the inner array contains false, then it returns false, then the result is:
@@ -85,8 +84,8 @@ object query {
     }
     
 //      Define the tfidf scoring method
-//      idf value is calculated for the queryString
-//      7. Omit quote from queryString if there are
+//      idf value is calculated for each queryString
+//      7. Omit the double quote marks from queryString
 //      8. For each document, split the words
 //      9. Count the times of the queryString appears in the document
 //      10. Calculate tf
