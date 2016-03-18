@@ -25,7 +25,7 @@ This code does not need to be compiled, can be executed from a console like this
 
 ###### 3. querySpark.scala (require spark-assembly-1.3.0-hadoop1.0.4.jar).
 
-If you have installed spark, and spark-submit is executable, querySpark is highly recommended as this code is scalable. You can run the code with Eclipse by adding external package 'spark-assembly-1.3.0-hadoop1.0.4.jar' or you can execute it with 'spark-submit' from a console after compile the code into a jar file. For example: 
+If you have installed spark, and spark-submit is executable, querySpark is highly recommended as this code is scalable. You can run the code with Eclipse by adding external package 'spark-assembly-1.3.0-hadoop1.0.4.jar' or you can execute it with 'spark-submit' from a console after compiling the code into a jar file. For example: 
 
 
     spark-submit --class com.beifei.searchEngine.querySpark --properties-file spark-1.3.0/conf/spark-defaults.conf --jars spark-assembly-1.3.0-hadoop1.0.4.jar querySpark.jar
