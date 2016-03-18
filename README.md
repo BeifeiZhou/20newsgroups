@@ -33,7 +33,7 @@ If you have installed spark, and spark-submit is executable, querySpark is highl
 ### Execute example
 
     scala -classpath commons-io-2.4.jar queryScala.scala
-    Enter the input folder path: 20_newsgroups
+    Enter the input folder path: /Users/Alice_Maple/Beifei/projects/MailOnline/data/20_newsgroups
     Enter the query type, boolean or tfidf: boolean
     Enter the maximum number of results, if all results are need, please enter -1: 
     Enter a queryString: science and flower or religion
