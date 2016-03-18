@@ -19,10 +19,11 @@ How to run: Scala-2.10 is required. There are three versions for this searching 
     - This code is for a single node task query. If you want to run the code with Eclipse, make sure you also build path by adding external archives which are also listed here. 
 2. queryScala.scala (require external package: commons-io-2.4.jar)
     - This code does not need to be compiled, can be executed from a console like this:
-    
+
 
     scala -classpath commons-io-2.4.jar queryScala.scala
-    
+   
+   
 3. querySpark.scala (require spark-assembly-1.3.0-hadoop1.0.4.jar) 
     If you have installed spark, and spark-submit is executable, querySpark is highly recommended as this code is scalable. 
     You can run the code with Eclipse by adding external package 'spark-assembly-1.3.0-hadoop1.0.4.jar' or you can execute it with 'spark-sub' from a console. 
